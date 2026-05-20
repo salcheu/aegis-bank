@@ -2,7 +2,7 @@
 
 Bienvenue sur le projet **Aegis Bank**, une landing page conçue pour offrir une alternative éthique et transparente aux néobanques traditionnelles. 
 
-![Aperçu du site](aegis_bank.png)
+<img src="aegis_bank.png" width="300">
 
 ## 🚀 Présentation du projet
 Ce projet a été réalisé dans le cadre de ma formation en développement web à l'EFP (2026). Il se concentre sur une interface **mobile-first**, garantissant une expérience utilisateur fluide et respectueuse de la vie privée.
