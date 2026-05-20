@@ -21,7 +21,7 @@ Le développement a été réalisé en **HTML5 et CSS3 pur** :
 
 ## 📦 Installation
 Pour cloner et tester le projet localement :
-1. `git clone https://github.com/saracheu/aegis-bank.git`
+1. `git clone https://github.com/salcheu/aegis-bank`
 2. Ouvrir `index.html` dans votre navigateur.
 
 ## 🌐 Déploiement
