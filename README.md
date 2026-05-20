@@ -1,13 +1,37 @@
-🏦 Aegis Bank - Projet d'Intégration Q1
+# 🏦 Aegis Bank | Landing Page Créateurs
 
-Bienvenue sur mon projet pour le Q1. L'objectif était de créer une interface bancaire en utilisant les meilleures pratiques de développement front-end.
+Bienvenue sur le projet **Aegis Bank**, une landing page conçue pour offrir une alternative éthique et transparente aux néobanques traditionnelles. 
 
-✨ Points du projet :
+![Aperçu du site](aegis_bank.png)
 
-•	Méthodologie BEM : Pour un code CSS organisé et facile à lire.
-•	Variables CSS : Utilisation de variables pour gérer les couleurs et la charte graphique de manière professionnelle.
-•	HTML Sémantique : Une structure de page optimisée.
-•	Site hébergé en direct via Netlify.
+## 🚀 Présentation du projet
+Ce projet a été réalisé dans le cadre de ma formation en développement web à l'EFP (2026). Il se concentre sur une interface **mobile-first**, garantissant une expérience utilisateur fluide et respectueuse de la vie privée.
 
-🔗 Lien du site en direct :
-https://aegisbank-saracheu.netlify.app
+## 🛠 Stack Technique & Architecture
+Le développement a été réalisé en **HTML5 et CSS3 pur** :
+- **Approche Mobile-First** : Interface optimisée pour le viewport.
+- **Architecture BEM** : Structure CSS modulaire et maintenable.
+- **Design System** : Utilisation de variables CSS pour une charte graphique cohérente.
+- **Sémantique HTML** : Structure optimisée pour l'accessibilité.
+
+## ✨ Fonctionnalités clés
+- Navigation adaptative (menu mobile).
+- Gestion unifiée des couleurs via variables CSS.
+- Design responsive cross-device.
+
+## 📦 Installation
+Pour cloner et tester le projet localement :
+1. `git clone https://github.com/saracheu/aegis-bank.git`
+2. Ouvrir `index.html` dans votre navigateur.
+
+## 🌐 Déploiement
+Le projet est hébergé en direct via Netlify :
+https://aegisbank-saracheu.netlify.app/
+
+## 💎 Démarche Qualité (Clean Code)
+Ce projet respecte les standards du développement front-end moderne :
+- **Validation** : Code conforme aux standards du Web.
+- **Accessibilité** : Utilisation de balises sémantiques pour une navigation inclusive.
+
+## 🤝 Contribution
+Ce projet est un exercice pédagogique réalisé dans le cadre de ma formation. Toute suggestion visant à améliorer la structure CSS ou l'accessibilité est la bienvenue. 
