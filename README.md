@@ -1,4 +1,4 @@
-# 🏦 Aegis Bank | Landing Page Créateurs
+# 🏦 Aegis Bank | La néobanque éthique & Transparente
 
 Bienvenue sur le projet **Aegis Bank**, une landing page conçue pour offrir une alternative éthique et transparente aux néobanques traditionnelles. 
 
