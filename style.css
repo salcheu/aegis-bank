@@ -16,11 +16,12 @@
 }
 
 body {
+    overflow: hidden;
     background-color: var(--bg-dark);
     color: var(--white);
     font-family: 'Inter', sans-serif;
-    height: 100vh
-    max: height 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
 }
 
 /* --- 3. COMPOSANT : HEADER --- */
@@ -31,6 +32,7 @@ body {
     padding: 20px;
     /* Sert de point de repère pour le positionnement des éléments enfants */
     position: relative;
+    flex-shrink: 0;
 }
 
 /* Bouton Menu Burger */
@@ -63,10 +65,16 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
     white-space: nowrap;
+    /* cursor: pointer; */
     padding-right: 25px;
 }
 
-.header__logo span {
+/* Couleurs distinctes : AEGIS en blanc, BANK en vert néon */
+.header__logo-aegis {
+    color: var(--white);
+}
+
+.header__logo-bank {
     color: var(--neon-green);
 }
 
@@ -76,7 +84,7 @@ body {
     flex-direction: column;
     align-items: flex-end; 
     gap: 6px;
-    z-index: 10;
+    
 }
 
 .header__link {
@@ -103,24 +111,26 @@ body {
 /* --- 4. COMPOSANT : HERO --- */
 .hero {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* padding: 20px 10px; */
-    /* padding: 10px 5px; */
     padding: 5px 2.5px;
 
 }
 
 .hero__container {
     max-width: 90%;
-    margin-bottom: 20px; 
+    padding: 10px;
 }
 
 .hero__title {
     font-size: 2.2rem;
     line-height: 1.2;
     margin-bottom: 20px;
+    /* Masqué par défaut : attendu que l'animation démarre */
+    opacity: 0;
+    animation: reveal-left 1.8s ease forwards;
 }
 
 .hero__subtitle {
@@ -128,6 +138,9 @@ body {
     color: var(--neon-green);
     text-transform: uppercase;
     margin-bottom: 30px;
+    /* Masqué par défaut : attendu que l'animation démarre */
+    opacity: 0;
+    animation: reveal-left 1.8s ease 1.2s forwards;
 }
 
 .hero__cta {
@@ -142,8 +155,17 @@ body {
     box-shadow: 0 0 20px rgba(195, 255, 0, 0.4);
     cursor: pointer;
     transition: var(--transition-standard);
+    animation: fade-up 0.9s ease 0.4s forwards;
 }
 
+/* Micro-interaction : effet outline au survol */
+.hero__cta:hover,
+.hero__cta:active {
+    background-color: transparent;
+    color: var(--neon-green);
+    border: 2px solid var(--neon-green);
+    box-shadow: 0 0 30px rgba(195, 255, 0, 0.6);
+}
 
 .promo-card {
     border: 2px solid var(--neon-green);
@@ -171,7 +193,6 @@ body {
 }
 
 /* --- COMPOSANT SOCIAL-GROUP --- */
-
 
 .social-group {
     display: flex;
@@ -209,9 +230,10 @@ body {
 /* --- 6. COMPOSANT : FOOTER --- */
 .footer {
     width: 100%;
-    padding: 40px 20px;
+    padding: 20px 10px;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .footer__legal {
@@ -229,3 +251,23 @@ body {
 .footer__link:hover {
     opacity: 1;
 }
+
+/* --- 7. ANIMATIONS --- */
+
+@keyframes reveal-left {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/* 
+nota p mim animacao - está no fim keyframes e no title, subtitle, cta. 
+Falta gravar no github fazer push*/
